@@ -1,16 +1,28 @@
 # othello_vol2
 
-A new Flutter project.
+Flutterで作成したオセロアプリ
 
-## Getting Started
+# 目的
 
-This project is a starting point for a Flutter application.
+riverpodを使ったことが無かったのでその学習のため
 
-A few resources to get you started if this is your first Flutter project:
+# 状態管理
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+hooks_riverpod（ただしhooksについては現状未使用）
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# 設計
+MVVM
+
+### M(Model)
+オセロのゲームの状態を管理するデータクラスやページの定義などを格納
+riverpodで使用するデータに関してはfreezedでイミュータブル型で生成
+
+### V(View)
+
+見た目
+UIを生成して操作に応じたイベントをVMに送信する
+
+### VM(ViewModel)
+
+riverpodのプロバイダー、StateNotifierの定義
+オセロをする上での裏側の処理はここにまとまっている
