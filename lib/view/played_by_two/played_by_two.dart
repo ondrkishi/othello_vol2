@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:othello_vol2/model/page/page_definition.dart';
-import 'package:othello_vol2/view/common/othello_game_page.dart';
+import 'package:othello_vol2/view/othello_game/othello_game_page.dart';
 import 'package:othello_vol2/view_model/othello_game_state_notifier.dart.dart';
 
 // 「ふたりであそぶ」画面
